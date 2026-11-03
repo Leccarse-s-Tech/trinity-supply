@@ -75,7 +75,7 @@ export const CategoriesSection: React.FC = () => {
           ))}
         </div>
 
-        {/* 3. Observacao Comercial Abaixo do Grid (Sem Precos / Sem Carrinho) */}
+        {/* 3. Observacao Comercial Abaixo do Grid (Consulta Direta B2B) */}
         <div
           className="mt-10 sm:mt-12 bg-[#FFFFFF] rounded-xl border border-[#E5E7EB] p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-[0_4px_20px_rgba(17,24,39,0.04)]"
           style={{ borderLeft: '4px solid #F5B014' }}
