@@ -1,8 +1,8 @@
 import React from 'react';
-import { Building2, Clock, Layers, MessageSquare } from 'lucide-react';
+import { Building2, Clock, MessageSquare, Store } from 'lucide-react';
 import { OPERATIONAL_PILLARS } from '../data/siteData';
 
-const PILLAR_ICONS = [Layers, Clock, MessageSquare, Building2];
+const PILLAR_ICONS = [Store, Clock, MessageSquare, Building2];
 
 export const DifferentialsSection: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ export const DifferentialsSection: React.FC = () => {
         {/* Pilares em 4 Colunas */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {OPERATIONAL_PILLARS.map((pillar, index) => {
-            const IconComponent = PILLAR_ICONS[index] || Layers;
+            const IconComponent = PILLAR_ICONS[index] || Store;
             return (
               <div
                 key={pillar.number}
@@ -44,7 +44,7 @@ export const DifferentialsSection: React.FC = () => {
 
                   {/* Titulo do Pilar */}
                   <h3 className="font-display font-bold text-lg text-[#111827] leading-snug">
-                    {pillar.number}. {pillar.title}
+                    {pillar.title}
                   </h3>
 
                   {/* Descricao do Pilar */}

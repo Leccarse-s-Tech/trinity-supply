@@ -151,27 +151,27 @@ export const SUPPLY_CATEGORIES: SupplyCategory[] = [
 export const OPERATIONAL_PILLARS: OperationalPillar[] = [
   {
     number: '01',
-    title: 'Centralização de Compras',
+    title: 'Atacado e Varejo',
     description:
-      'Reduza o tempo gasto lidando com múltiplos fornecedores. Encontre pães, laticínios, congelados e embalagens em um só lugar.',
+      'Flexibilidade para atender tanto a compra programada quanto a reposição pontual da sua operação.',
   },
   {
     number: '02',
-    title: 'Entrega Rápida na Região',
+    title: 'Entrega Dentro do Prazo',
     description:
-      'Logística ágil planejada para a rotina intensa de hamburguerias e lanchonetes em Guarulhos e região.',
+      'Logística ágil e pontual estruturada para não interromper a sua produção de hambúrgueres e lanches.',
   },
   {
     number: '03',
-    title: 'Atendimento Direto sem Burocracia',
+    title: 'Atendimento Rápido e Atencioso',
     description:
-      'Negociação e reposição de estoque direto pelo WhatsApp com equipe que entende a urgência do food service.',
+      'Equipe dedicada para orçamentos diretos no WhatsApp, com agilidade e clareza técnica.',
   },
   {
     number: '04',
-    title: 'Loja Física e Retirada Rápida',
+    title: 'Retirada Presencial',
     description:
-      'Galpão estruturado em Guarulhos com recuo de estacionamento frontal para retirada imediata de mercadorias quando sua operação precisar.',
+      'Galpão próprio em Guarulhos com fácil acesso e recuo frontal para estacionamento e carga ágil.',
   },
 ];
 
