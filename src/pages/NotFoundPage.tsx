@@ -9,27 +9,15 @@ export const NotFoundPage: React.FC = () => {
   return (
     <main className="min-h-screen flex items-center justify-center bg-white px-4 py-12">
       <div className="max-w-2xl mx-auto text-center w-full">
-        {/* Tag Institucional */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F8F9FA] border border-[#E5E7EB] mb-8">
-          <span
-            className="w-2.5 h-2.5 rounded-full bg-[#F5B014]"
-            aria-hidden="true"
-          />
-          <span className="text-xs font-bold uppercase tracking-wider text-[#111827]">
-            ERRO 404 - ROTA NÃO ENCONTRADA
-          </span>
-        </div>
-
-        {/* Composicao Tipografica 4 [CAIXA DO LOGO COMO 0] 4 */}
+        {/* Ilustracao Grafica 404 com o digito 0 estilizado como a Caixa 3D do Logotipo Oficial */}
         <div
-          className="flex items-center justify-center gap-2 sm:gap-5 md:gap-7 my-2 select-none"
+          className="flex items-center justify-center gap-2 sm:gap-5 md:gap-7 my-4 select-none"
           aria-label="Codigo 404 com o zero representado pela caixa 3D do logotipo da Trinity Supply"
         >
           <span className="font-display font-black text-[96px] sm:text-[140px] md:text-[170px] leading-none text-[#111315] drop-shadow-[4px_6px_0px_#F5B014]">
             4
           </span>
 
-          {/* O digito 0 substituido pela Caixa 3D e Hexagono Oficial do Logotipo Trinity Supply */}
           <LogoBoxZero className="w-24 h-24 sm:w-36 sm:h-36 md:w-44 md:h-44" />
 
           <span className="font-display font-black text-[96px] sm:text-[140px] md:text-[170px] leading-none text-[#111315] drop-shadow-[4px_6px_0px_#F5B014]">
