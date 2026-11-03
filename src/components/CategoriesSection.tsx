@@ -13,7 +13,7 @@ export const CategoriesSection: React.FC = () => {
         {/* 1. Cabecalho da Secao */}
         <div className="max-w-3xl mb-12 sm:mb-14">
           <p className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#B88208] mb-2.5">
-            PORTFÓLIO DE ABASTECIMENTO B2B
+            PORTFÓLIO DE ABASTECIMENTO FOOD SERVICE
           </p>
           <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#111827] tracking-tight leading-tight">
             Tudo para sua hamburgueria em um único fornecedor
@@ -59,7 +59,7 @@ export const CategoriesSection: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Link Direto de Consulta B2B via WhatsApp para a Linha */}
+              {/* Link Direto de Consulta via WhatsApp para a Linha */}
               <div className="mt-6 pt-3 border-t border-[#F8F9FA]">
                 <a
                   href={category.whatsappText}
@@ -75,17 +75,17 @@ export const CategoriesSection: React.FC = () => {
           ))}
         </div>
 
-        {/* 3. Observacao Comercial Abaixo do Grid (Consulta Direta B2B) */}
+        {/* 3. Observacao Comercial Abaixo do Grid (Atendimento no Atacado e Varejo) */}
         <div
           className="mt-10 sm:mt-12 bg-[#FFFFFF] rounded-xl border border-[#E5E7EB] p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-[0_4px_20px_rgba(17,24,39,0.04)]"
           style={{ borderLeft: '4px solid #F5B014' }}
         >
           <div className="space-y-1.5 max-w-2xl">
             <span className="inline-block text-xs font-bold uppercase tracking-wider text-[#B88208]">
-              Atendimento Comercial Atacadista e Food Service
+              Atendimento no Atacado e Varejo
             </span>
             <p className="text-base sm:text-lg font-bold text-[#111827] leading-snug">
-              Deseja consultar a disponibilidade de marcas e condições comerciais para o seu CNPJ ou
+              Deseja consultar a disponibilidade de marcas e condições para o seu negócio ou
               operação?
             </p>
           </div>

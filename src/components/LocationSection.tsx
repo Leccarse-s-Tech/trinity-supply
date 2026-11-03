@@ -16,7 +16,7 @@ export const LocationSection: React.FC = () => {
             Localização e Estrutura de Atendimento em Guarulhos
           </h2>
           <p className="mt-3.5 text-base sm:text-lg text-[#4B5563] leading-relaxed">
-            Sede estruturada para atendimento comercial B2B, retirada rápida de pedidos e suporte
+            Sede estruturada para atendimento no atacado e varejo, retirada rápida de pedidos e suporte
             direto à sua operação de food service.
           </p>
         </div>

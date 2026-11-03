@@ -76,7 +76,7 @@ export const HERO_METRICS = [
     label: 'Seguidores e Parceiros no Instagram',
   },
   {
-    value: 'Agilidade B2B',
+    value: 'Atacado e Varejo',
     label: 'Atendimento Direto e Entrega Rápida',
   },
   {

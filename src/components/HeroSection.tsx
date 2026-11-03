@@ -24,7 +24,7 @@ export const HeroSection: React.FC = () => {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg lg:text-xl text-[#4B5563] leading-relaxed max-w-3xl font-normal">
-            Qualidade que impulsiona seu negócio. Fornecimento B2B padronizado, entrega rápida e
+            Qualidade que impulsiona seu negócio. Fornecimento padronizado no atacado e varejo, entrega rápida e
             atendimento direto para hamburguerias, lanchonetes e restaurantes que não podem parar.
           </p>
 

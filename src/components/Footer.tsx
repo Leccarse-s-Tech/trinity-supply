@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
 
   return (
     <div className="bg-[#FFFFFF]">
-      {/* 1. Faixa Pre-Footer de Conversao B2B - Ocupando a largura total util */}
+      {/* 1. Faixa Pre-Footer de Conversao - Ocupando a largura total util */}
       <section className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pb-16 sm:pb-20">
         <div
           className="w-full relative overflow-hidden rounded-2xl facade-surface bg-[#111315] text-white p-8 lg:p-12 shadow-[0_18px_45px_rgba(17,19,21,0.18)]"

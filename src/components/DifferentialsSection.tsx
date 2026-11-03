@@ -52,11 +52,6 @@ export const DifferentialsSection: React.FC = () => {
                     {pillar.description}
                   </p>
                 </div>
-
-                <div className="mt-6 pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#111827]">
-                  <span>Padrão Trinity Supply</span>
-                  <span className="w-2 h-2 rounded-full bg-[#F5B014]" aria-hidden="true" />
-                </div>
               </div>
             );
           })}

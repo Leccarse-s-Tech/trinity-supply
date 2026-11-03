@@ -1,8 +1,8 @@
-# Trinity Supply | Distribuidora de Paes e Embalagens (B2B Food Service)
+# Trinity Supply | Distribuidora de Paes e Embalagens (Food Service)
 
-Landing Page institucional B2B desenvolvida para a **Trinity Supply Distribuidora De Paes e Embalagens** (`@trinitysupply_oficial`), localizada em **Guarulhos - SP**.
+Landing Page institucional desenvolvida para a **Trinity Supply Distribuidora De Paes e Embalagens** (`@trinitysupply_oficial`), localizada em **Guarulhos - SP**.
 
-O projeto posiciona a marca como distribuidora completa de insumos e embalagens para hamburguerias, lanchonetes e operacoes de food service sob o conceito **"Tudo para sua hamburgueria em um so lugar"** e **"Qualidade que impulsiona seu negocio"**.
+O projeto posiciona a marca como distribuidora completa de insumos e embalagens para hamburguerias, lanchonetes e operacoes de food service sob o conceito **"Tudo para sua hamburgueria em um so lugar"** e **"Qualidade que impulsiona seu negocio"**, com atendimento estruturado no atacado e varejo.
 
 ---
 
@@ -10,8 +10,8 @@ O projeto posiciona a marca como distribuidora completa de insumos e embalagens 
 
 1. **Contraste Arquitetonico (Fachada Escura vs. Corpo Claro Institucional)**:
    - **Navbar e Footer (`#111315` / `#1A1D20` / `#F5B014`)**: Replica digital fiel da fachada fisica em ACM preto fosco da sede em Guarulhos, incluindo o friso superior amarelo de `4px`, simulacao dos 8 spots de LED embutidos no beiral, logotipo vetorial 3D, placa central em relevo e testeira inferior da marquise.
-   - **Corpo da Pagina (`#FFFFFF` / `#F8F9FA`)**: Ambiente claro, limpo e corporativo para transmitir conformidade sanitaria, organizacao logistica e credibilidade B2B.
-2. **Foco Exclusivo em Conversao Consultiva B2B via WhatsApp**:
+   - **Corpo da Pagina (`#FFFFFF` / `#F8F9FA`)**: Ambiente claro, limpo e corporativo para transmitir conformidade sanitaria, organizacao logistica e credibilidade operacional.
+2. **Foco Exclusivo em Conversao Consultiva via WhatsApp**:
    - Sem elementos de e-commerce, carrinho ou precos unitarios.
    - Todos os CTAs direcionam para o canal comercial oficial no WhatsApp (`11 94083-8995` - `https://wa.me/5511940838995`) com mensagens pre-preenchidas contextualizadas por secao.
 3. **Zero Emojis**:
@@ -48,11 +48,11 @@ trinity-supply/
 ├── src/
 │   ├── components/
 │   │   ├── BrandLogo.tsx          # Logotipo vetorial 3D e Caixa 3D para o 0 do 404
-│   │   ├── CategoriesSection.tsx  # Grid das 6 categorias de insumos B2B
-│   │   ├── DifferentialsSection.tsx # 4 pilares operacionais B2B
+│   │   ├── CategoriesSection.tsx  # Grid das 6 categorias de insumos food service
+│   │   ├── DifferentialsSection.tsx # 4 pilares operacionais
 │   │   ├── FloatingWhatsApp.tsx   # Sticky CTA de WhatsApp no canto inferior direito
 │   │   ├── Footer.tsx             # Banner de conversao pre-footer + Footer escuro
-│   │   ├── HeroSection.tsx        # Hero B2B 60/40 com metricas e moldura da sede
+│   │   ├── HeroSection.tsx        # Hero food service 60/40 com metricas e moldura da sede
 │   │   ├── Icons.tsx              # Icones vetoriais customizados
 │   │   ├── LocationSection.tsx    # Ficha oficial do Google Maps + Iframe interativo
 │   │   ├── Navbar.tsx             # Replica digital da fachada fisica

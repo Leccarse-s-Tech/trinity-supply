@@ -66,7 +66,7 @@ export const StarFilledIcon: React.FC<IconProps> = ({ className = 'w-5 h-5' }) =
 
 /**
  * Icones vetoriais minimalistas em preto (#111315) e amarelo (#F5B014)
- * para as 6 categorias de insumos B2B da Trinity Supply.
+ * para as 6 categorias de insumos da Trinity Supply.
  */
 export const CategoryVectorIcon: React.FC<{
   type: 'bread' | 'packaging' | 'cheese' | 'meat' | 'sauces' | 'frozen';
@@ -105,7 +105,7 @@ export const CategoryVectorIcon: React.FC<{
     case 'packaging':
       return (
         <svg viewBox="0 0 36 36" fill="none" className={className} aria-hidden="true">
-          {/* Caixa isometrica B2B para delivery e embalagens */}
+          {/* Caixa isometrica food service para delivery e embalagens */}
           <path
             d="M18 5L31 12.2V23.8L18 31L5 23.8V12.2L18 5Z"
             fill="#F5B014"

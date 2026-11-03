@@ -2,7 +2,7 @@
   "name": "trinity-supply",
   "private": true,
   "version": "1.0.0",
-  "description": "Landing Page Institucional B2B - Trinity Supply Distribuidora De Paes e Embalagens em Guarulhos/SP",
+  "description": "Landing Page Institucional - Trinity Supply Distribuidora De Paes e Embalagens no Atacado e Varejo em Guarulhos/SP",
   "type": "module",
   "scripts": {
     "dev": "vite",
