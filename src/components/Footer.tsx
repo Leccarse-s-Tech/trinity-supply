@@ -43,10 +43,10 @@ export const Footer: React.FC = () => {
                 href={BRAND_INFO.whatsapp.bannerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base transition-all shadow-[0_6px_22px_rgba(245,176,20,0.32)] whitespace-nowrap"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base text-center flex items-center justify-center gap-2.5 box-border break-words text-balance transition-all shadow-[0_6px_22px_rgba(245,176,20,0.32)]"
               >
                 <WhatsAppIcon className="w-5 h-5 shrink-0" />
-                <span>Iniciar Conversa no WhatsApp (11 94083-8995)</span>
+                <span>Iniciar Conversa no WhatsApp</span>
               </a>
             </div>
           </div>

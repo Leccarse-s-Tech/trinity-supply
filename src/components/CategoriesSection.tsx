@@ -94,10 +94,10 @@ export const CategoriesSection: React.FC = () => {
             href={BRAND_INFO.whatsapp.catalogUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base transition-all shadow-[0_4px_14px_rgba(245,176,20,0.28)] whitespace-nowrap shrink-0"
+            className="w-full sm:w-auto px-4 py-3 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm text-center flex items-center justify-center gap-2 box-border break-words text-balance transition-all shadow-[0_4px_14px_rgba(245,176,20,0.28)]"
           >
             <WhatsAppIcon className="w-5 h-5 shrink-0" />
-            <span>Consultar Catálogo no WhatsApp</span>
+            <span>Consultar Catálogo via WhatsApp</span>
           </a>
         </div>
       </div>
