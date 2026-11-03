@@ -185,50 +185,50 @@ export const Navbar: React.FC = () => {
             : 'relative h-9 sm:h-10'
         }`}
       >
-        <div className="w-full max-w-[1440px] mx-auto h-full px-4 sm:px-8 lg:px-12 flex items-center justify-between text-xs sm:text-sm">
-          {/* Divisao Tripartite - Esquerda: Instagram @trinitysupply_oficial */}
-          <div className="flex-1 flex items-center justify-start min-w-0">
+        <div className="w-full max-w-[1440px] mx-auto h-full px-4 sm:px-8 lg:px-12 grid grid-cols-3 items-center text-xs text-white">
+          {/* Esquerda */}
+          <div className="flex items-center justify-start min-w-0">
             <a
               href={BRAND_INFO.instagram.url}
               target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-white hover:text-[#F5B014] transition-colors font-medium truncate"
-              aria-label="Instagram oficial @trinitysupply_oficial"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 text-white hover:text-[#F5B014] transition-colors font-medium"
+              aria-label="Instagram Trinity Supply"
             >
               <InstagramIcon className="w-4 h-4 text-[#F5B014] shrink-0" />
-              <span className="truncate">{BRAND_INFO.instagram.handle}</span>
+              <span className="hidden sm:inline truncate">{BRAND_INFO.instagram.handle}</span>
             </a>
           </div>
 
-          {/* Divisao Tripartite - Centro: Logotipo Compacto da Trinity Supply surgindo com transicao suave ao rolar */}
-          <div className="flex items-center justify-center px-2">
+          {/* Centro */}
+          <div className="flex items-center justify-center">
             <Link
               to="/"
-              className={`inline-flex items-center gap-2 transition-all duration-300 ${
+              className={`inline-flex items-center gap-1.5 transition-all duration-300 ${
                 isScrolled
                   ? 'opacity-100 scale-100 pointer-events-auto'
                   : 'opacity-0 scale-90 pointer-events-none'
               }`}
               aria-label="Trinity Supply - Inicio"
             >
-              <TrinityEmblemSvg className="w-6 h-6 shrink-0" />
-              <span className="font-display font-black text-xs sm:text-sm tracking-tight text-[#F5B014] whitespace-nowrap">
+              <TrinityEmblemSvg className="w-4 h-4 text-[#F5B014] shrink-0" />
+              <span className="font-extrabold text-[#F5B014] tracking-wider text-xs sm:text-sm whitespace-nowrap">
                 TRINITY SUPPLY
               </span>
             </Link>
           </div>
 
-          {/* Divisao Tripartite - Direita: WhatsApp 11 94083-8995 */}
-          <div className="flex-1 flex items-center justify-end min-w-0">
+          {/* Direita */}
+          <div className="flex items-center justify-end min-w-0">
             <a
               href={BRAND_INFO.whatsapp.baseUrl}
               target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-white hover:text-[#F5B014] transition-colors font-semibold whitespace-nowrap"
-              aria-label="WhatsApp comercial 11 94083-8995"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 text-white hover:text-[#F5B014] transition-colors font-semibold"
+              aria-label="WhatsApp Trinity Supply"
             >
               <WhatsAppIcon className="w-4 h-4 text-[#F5B014] shrink-0" />
-              <span>{BRAND_INFO.whatsapp.display}</span>
+              <span className="hidden sm:inline whitespace-nowrap">{BRAND_INFO.whatsapp.display}</span>
             </a>
           </div>
         </div>
