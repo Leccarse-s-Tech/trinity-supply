@@ -1,6 +1,6 @@
 export interface GoogleReview {
   firstName: string;
-  role: string;
+  role?: string;
   rating: 5;
   source: 'Google Maps';
   comment: string;
@@ -175,32 +175,38 @@ export const OPERATIONAL_PILLARS: OperationalPillar[] = [
   },
 ];
 
-// Estrutura pronta para receber os textos literais das avaliacoes 5 estrelas do Google Maps
-export const GOOGLE_FIVE_STAR_REVIEWS: GoogleReview[] = [
+// Avaliacoes 5 estrelas legitimas do Google Maps
+export const GOOGLE_REVIEWS: GoogleReview[] = [
   {
-    firstName: 'Marcos',
-    role: 'Parceiro Food Service - Guarulhos/SP',
+    firstName: "Janaina",
     rating: 5,
-    source: 'Google Maps',
-    comment:
-      'Excelente distribuidora em Guarulhos. Atendimento rápido, variedade completa de pães e embalagens para hamburgueria e ótimo suporte pelo WhatsApp.',
+    source: "Google Maps",
+    comment: "Bom atendimento, vende no varejo e atacado."
   },
   {
-    firstName: 'Rodrigo',
-    role: 'Operação de Hamburgueria - Guarulhos/SP',
+    firstName: "Brenda",
     rating: 5,
-    source: 'Google Maps',
-    comment:
-      'Tudo para hamburgueria em um só lugar. Produtos de altíssima qualidade, entrega pontual e facilidade para retirar no local com estacionamento.',
+    source: "Google Maps",
+    comment: "Atendimento rapido e eficiente. Sempre muito atenciosos. Entrega sempre dentro do prazo!! Recomendo."
   },
   {
-    firstName: 'Fernanda',
-    role: 'Gestão de Lanchonete - Região de Guarulhos',
+    firstName: "Pdpners",
     rating: 5,
-    source: 'Google Maps',
-    comment:
-      'Atendimento nota 10 e insumos das melhores marcas para food service. Recomendo para quem tem lanchonete ou hamburgueria na região.',
+    source: "Google Maps",
+    comment: "Excelente servico, rapidez, qualidade e confiabilidade. Recomendo."
   },
+  {
+    firstName: "Priscila",
+    rating: 5,
+    source: "Google Maps",
+    comment: "Produtos de qualidade e atendimento excelente."
+  },
+  {
+    firstName: "Ketlyn",
+    rating: 5,
+    source: "Google Maps",
+    comment: "Otimos profissionais."
+  }
 ];
 
-export const GOOGLE_REVIEWS = GOOGLE_FIVE_STAR_REVIEWS;
+export const GOOGLE_FIVE_STAR_REVIEWS = GOOGLE_REVIEWS;
