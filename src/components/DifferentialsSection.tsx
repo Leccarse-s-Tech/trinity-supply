@@ -10,7 +10,7 @@ export const DifferentialsSection: React.FC = () => {
       id="diferenciais"
       className="bg-[#FFFFFF] text-[#111827] py-16 sm:py-20 lg:py-24 border-b border-[#E5E7EB]"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
         {/* Cabecalho da Secao */}
         <div className="max-w-3xl mb-12 sm:mb-14">
           <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#111827] tracking-tight leading-tight">

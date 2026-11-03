@@ -9,7 +9,7 @@ export const CategoriesSection: React.FC = () => {
       id="insumos"
       className="bg-[#F8F9FA] text-[#111827] py-16 sm:py-20 lg:py-24 border-b border-[#E5E7EB]"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
         {/* 1. Cabecalho da Secao */}
         <div className="max-w-3xl mb-12 sm:mb-14">
           <p className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#B88208] mb-2.5">

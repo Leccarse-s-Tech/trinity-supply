@@ -21,14 +21,14 @@ export const Footer: React.FC = () => {
 
   return (
     <div className="bg-[#FFFFFF]">
-      {/* 1. Faixa Pre-Footer de Conversao B2B */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
+      {/* 1. Faixa Pre-Footer de Conversao B2B - Ocupando a largura total util */}
+      <section className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pb-16 sm:pb-20">
         <div
-          className="relative overflow-hidden rounded-2xl facade-surface bg-[#111315] text-white p-8 sm:p-10 lg:p-12 shadow-[0_18px_45px_rgba(17,19,21,0.18)]"
+          className="w-full relative overflow-hidden rounded-2xl facade-surface bg-[#111315] text-white p-8 lg:p-12 shadow-[0_18px_45px_rgba(17,19,21,0.18)]"
           style={{ borderTop: '4px solid #F5B014' }}
         >
-          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-            <div className="max-w-2xl space-y-3">
+          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 w-full">
+            <div className="w-full lg:max-w-3xl space-y-3">
               <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-tight">
                 Pronto para elevar o padrão de abastecimento da sua hamburgueria?
               </h2>
@@ -38,12 +38,12 @@ export const Footer: React.FC = () => {
               </p>
             </div>
 
-            <div className="w-full sm:w-auto shrink-0">
+            <div className="w-full sm:w-auto lg:shrink-0 flex justify-start lg:justify-end">
               <a
                 href={BRAND_INFO.whatsapp.bannerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base transition-all shadow-[0_6px_22px_rgba(245,176,20,0.32)] whitespace-nowrap"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base transition-all shadow-[0_6px_22px_rgba(245,176,20,0.32)] whitespace-nowrap"
               >
                 <WhatsAppIcon className="w-5 h-5 shrink-0" />
                 <span>Iniciar Conversa no WhatsApp (11 94083-8995)</span>
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
 
       {/* 2. Footer Escuro (#111315) - Fechamento Arquitetonico Fiel a Fachada */}
       <footer className="facade-surface bg-[#111315] text-white border-t-4 border-[#F5B014]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 py-14 sm:py-16">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
             {/* Coluna 1 (Identidade - 5/12) */}
             <div className="md:col-span-5 space-y-4">
@@ -145,7 +145,7 @@ export const Footer: React.FC = () => {
 
         {/* Barra Inferior de Direitos Autorais */}
         <div className="bg-[#1A1D20] border-t border-white/10 py-5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
             <p className="text-xs sm:text-sm text-[#9CA3AF]">
               Trinity Supply Distribuidora De Pães e Embalagens. Todos os direitos reservados.
               Página institucional informativa.
