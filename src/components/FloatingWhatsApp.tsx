@@ -4,8 +4,9 @@ import { BRAND_INFO } from '../data/siteData';
 
 /**
  * Botao Flutuante de WhatsApp (Sticky CTA)
- * Posicionado no canto inferior direito (bottom: 24px, right: 24px),
- * com icone vetorial de WhatsApp sobre fundo #111315 com borda #F5B014.
+ * Posicionado no canto inferior direito:
+ * - Mobile (< 640px): fixed z-50 bottom-4 right-4 w-12 h-12 rounded-full
+ * - Desktop (>= 640px): sm:bottom-6 sm:right-6 sm:w-auto sm:h-auto sm:px-4 sm:py-3 sm:rounded-full
  */
 export const FloatingWhatsApp: React.FC = () => {
   return (
@@ -14,13 +15,10 @@ export const FloatingWhatsApp: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Atendimento imediato via WhatsApp comercial Trinity Supply"
-      style={{ bottom: '24px', right: '24px' }}
-      className="fixed z-50 inline-flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-[#111315] hover:bg-[#1A1D20] active:scale-[0.97] text-white border-2 border-[#F5B014] shadow-[0_10px_28px_rgba(17,19,21,0.45)] transition-all group"
+      className="fixed z-50 bottom-4 right-4 w-12 h-12 sm:bottom-6 sm:right-6 sm:w-auto sm:h-auto sm:px-4 sm:py-3 flex items-center justify-center sm:inline-flex sm:gap-2.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-lg hover:shadow-xl active:scale-[0.97] transition-all group"
     >
-      <span className="w-8 h-8 rounded-full bg-[#F5B014] text-[#111315] flex items-center justify-center shrink-0">
-        <WhatsAppIcon className="w-5 h-5" />
-      </span>
-      <span className="hidden sm:inline-block pr-1 text-xs font-bold tracking-wide text-white group-hover:text-[#F5B014] transition-colors">
+      <WhatsAppIcon className="w-6 h-6 shrink-0" />
+      <span className="hidden sm:inline-block font-bold text-xs tracking-wide text-white">
         Atendimento WhatsApp
       </span>
     </a>

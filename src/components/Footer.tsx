@@ -160,7 +160,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Barra Inferior de Direitos Autorais */}
-        <div className="bg-[#1A1D20] border-t border-white/10 py-5">
+        <div className="bg-[#1A1D20] border-t border-white/10 pt-5 pb-20 sm:pb-8">
           <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
             <p className="text-xs sm:text-sm text-[#9CA3AF]">
               Trinity Supply Distribuidora De Pães e Embalagens. Todos os direitos reservados.
