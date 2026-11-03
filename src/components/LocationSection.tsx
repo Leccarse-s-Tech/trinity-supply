@@ -48,21 +48,21 @@ export const LocationSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Cidade */}
+              {/* Endereço Oficial */}
               <div className="flex items-start gap-3.5">
                 <div className="w-10 h-10 rounded-lg bg-[#111315] text-[#F5B014] flex items-center justify-center shrink-0 mt-0.5">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="block text-xs font-bold uppercase tracking-wider text-[#4B5563]">
-                    Cidade
+                    Endereço Oficial da Sede
                   </span>
-                  <p className="text-sm sm:text-base font-semibold text-[#111827] mt-0.5">
-                    Guarulhos - SP{' '}
-                    <span className="font-normal text-[#4B5563]">
-                      (Sede própria com recuo para carga e estacionamento)
-                    </span>
+                  <p className="text-sm sm:text-base font-bold text-[#111827] mt-0.5">
+                    {BRAND_INFO.address.fullFormatted}
                   </p>
+                  <span className="inline-block mt-1 text-xs text-[#4B5563]">
+                    (Sede própria com recuo para carga e estacionamento de clientes)
+                  </span>
                 </div>
               </div>
 

@@ -29,6 +29,14 @@ export const BRAND_INFO = {
   slogan: 'Tudo para sua hamburgueria em um só lugar',
   muralQuote: 'Qualidade que impulsiona seu negócio',
   cityRegion: 'Guarulhos - SP',
+  address: {
+    street: 'Av. Monte Alegre, 733',
+    neighborhood: 'Cidade Soberana',
+    cityState: 'Guarulhos - SP',
+    cep: '07161-150',
+    country: 'Brasil',
+    fullFormatted: 'Av. Monte Alegre, 733 - Cidade Soberana, Guarulhos - SP, 07161-150, Brasil',
+  },
   coordinates: {
     lat: -23.399886,
     lng: -46.4415113,

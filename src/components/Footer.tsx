@@ -131,12 +131,28 @@ export const Footer: React.FC = () => {
                   </a>
                 </li>
 
-                <li className="inline-flex items-center gap-2.5 text-white">
-                  <MapPin className="w-4 h-4 text-[#F5B014] shrink-0" />
-                  <span>
-                    <strong className="font-semibold text-[#9CA3AF]">Localização:</strong>{' '}
-                    Guarulhos / SP
-                  </span>
+                <li className="pt-2 border-t border-white/10">
+                  <div className="flex items-start gap-2.5 text-white">
+                    <MapPin className="w-4 h-4 text-[#F5B014] shrink-0 mt-0.5" />
+                    <div className="space-y-1 text-xs sm:text-sm">
+                      <p>
+                        <strong className="font-semibold text-[#9CA3AF]">Endereço:</strong>{' '}
+                        {BRAND_INFO.address.street}
+                      </p>
+                      <p>
+                        <strong className="font-semibold text-[#9CA3AF]">Bairro:</strong>{' '}
+                        {BRAND_INFO.address.neighborhood}
+                      </p>
+                      <p>
+                        <strong className="font-semibold text-[#9CA3AF]">Cidade/UF:</strong>{' '}
+                        {BRAND_INFO.address.cityState}
+                      </p>
+                      <p>
+                        <strong className="font-semibold text-[#9CA3AF]">CEP:</strong>{' '}
+                        {BRAND_INFO.address.cep}
+                      </p>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
