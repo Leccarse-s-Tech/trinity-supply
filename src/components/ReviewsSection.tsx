@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { ExternalLink, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { GoogleMapsBadgeIcon, StarFilledIcon } from './Icons';
 import { BRAND_INFO, GOOGLE_FIVE_STAR_REVIEWS } from '../data/siteData';
 
@@ -15,10 +15,9 @@ export const ReviewsSection: React.FC = () => {
     setCanScrollLeft(scrollLeft > 10);
     setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
 
-    // Calcula o indice aproximado com base no item visivel
     const card = carouselRef.current.firstElementChild as HTMLElement | null;
     if (card) {
-      const cardWidth = card.offsetWidth + 24; // largura + gap (24px)
+      const cardWidth = card.offsetWidth + 24;
       const currentIndex = Math.round(scrollLeft / cardWidth);
       setActiveIndex(Math.min(Math.max(currentIndex, 0), GOOGLE_FIVE_STAR_REVIEWS.length - 1));
     }
@@ -69,26 +68,17 @@ export const ReviewsSection: React.FC = () => {
     <section
       id="avaliacoes"
       className="bg-[#F8F9FA] text-[#111827] py-16 sm:py-20 lg:py-24 border-b border-[#E5E7EB]"
-      aria-label="Avaliações de clientes verificadas no Google Maps"
+      aria-label="Avaliações de clientes no Google Maps"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 1. Cabecalho da Secao com Controles do Carrossel */}
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
+        {/* 1. Cabecalho da Secao sem pill badge e com subtitulo conciso */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12">
           <div className="max-w-3xl">
-            {/* Badge Google SVG + AVALIACOES VERIFICADAS NO GOOGLE MAPS */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#E5E7EB] mb-4 shadow-xs">
-              <GoogleMapsBadgeIcon className="w-4 h-4 text-[#111315] shrink-0" />
-              <span className="text-xs font-bold uppercase tracking-wider text-[#111827]">
-                AVALIAÇÕES VERIFICADAS NO GOOGLE MAPS
-              </span>
-            </div>
-
             <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#111827] tracking-tight leading-tight">
               A confiança de quem abastece com a Trinity Supply
             </h2>
-            <p className="mt-3.5 text-base sm:text-lg text-[#4B5563] leading-relaxed">
-              Avaliações 5 estrelas de clientes e parceiros que contam com nossa estrutura em
-              Guarulhos.
+            <p className="mt-3 text-base sm:text-lg text-[#4B5563] leading-relaxed">
+              Avaliações 5 estrelas de clientes e parceiros no Google Maps.
             </p>
           </div>
 
@@ -115,7 +105,7 @@ export const ReviewsSection: React.FC = () => {
           </div>
         </div>
 
-        {/* 2. Trilho do Carrossel de Cards de Avaliacao (Exclusivamente 5 Estrelas) */}
+        {/* 2. Trilho do Carrossel de Cards de Avaliacao */}
         <div
           ref={carouselRef}
           role="region"
@@ -144,21 +134,14 @@ export const ReviewsSection: React.FC = () => {
                 </blockquote>
               </div>
 
-              {/* Nome do cliente em negrito (#111827) acompanhado do selo discreto */}
-              <div className="mt-6 pt-4 border-t border-[#E5E7EB] flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-[#111315] text-[#F5B014] font-display font-bold text-xs flex items-center justify-center shrink-0">
-                    {review.firstName.charAt(0).toUpperCase()}
-                  </div>
-                  <p className="font-display font-bold text-sm sm:text-base text-[#111827] leading-tight">
-                    {review.firstName}
-                  </p>
+              {/* Nome do cliente em negrito (#111827) sem tags redundantes */}
+              <div className="mt-6 pt-4 border-t border-[#E5E7EB] flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#111315] text-[#F5B014] font-display font-bold text-xs flex items-center justify-center shrink-0">
+                  {review.firstName.charAt(0).toUpperCase()}
                 </div>
-
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#F8F9FA] border border-[#E5E7EB] text-[11px] font-semibold text-[#4B5563]">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B88208] shrink-0" />
-                  <span>Avaliação 5 Estrelas no Google Maps</span>
-                </span>
+                <p className="font-display font-bold text-sm sm:text-base text-[#111827] leading-tight">
+                  {review.firstName}
+                </p>
               </div>
             </article>
           ))}
