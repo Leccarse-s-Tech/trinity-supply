@@ -1,5 +1,6 @@
 import React from 'react';
-import { MapPin, ShieldCheck, Truck, Users } from 'lucide-react';
+import { Building2, MapPin, ShieldCheck, Store, Truck, Users } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 import { WhatsAppIcon } from './Icons';
 import { BRAND_INFO } from '../data/siteData';
 
@@ -104,54 +105,75 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Coluna Direita (40%): Moldura Institucional com Fachada e Card Flutuante */}
+          {/* Coluna Direita (40%): Composicao Grafica Limpa em Vetor */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-2xl bg-[#F8F9FA] border border-[#E5E7EB] p-3 sm:p-4 shadow-[0_16px_40px_rgba(17,24,39,0.07)]">
-              {/* Barra superior de moldura arquitetonica */}
-              <div className="flex items-center justify-between px-3 py-2 mb-2.5 rounded-lg bg-[#111315] text-white border-b-2 border-[#F5B014]">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-[#F5B014]">
-                  Sede Oficial Guarulhos / SP
-                </span>
-                <span className="text-[11px] text-[#9CA3AF] font-medium">
-                  Pronta Entrega B2B
-                </span>
+            <div className="relative rounded-2xl facade-surface bg-[#111315] border border-white/10 p-6 sm:p-8 text-white shadow-[0_20px_50px_rgba(17,19,21,0.25)]">
+              {/* Friso superior amarelo sutil no topo do card */}
+              <div className="absolute top-0 left-6 right-6 h-[3px] bg-[#F5B014] rounded-full" aria-hidden="true" />
+
+              {/* Logotipo Oficial em Amarelo (#F5B014) */}
+              <div className="flex flex-col items-center sm:items-start text-center sm:text-left pt-2 pb-5 border-b border-white/10">
+                <BrandLogo size="lg" />
+                <p className="text-xs sm:text-sm text-[#9CA3AF] mt-2 font-medium">
+                  Tudo para sua <span className="text-[#F5B014] font-semibold">hamburgueria</span> em um só lugar
+                </p>
               </div>
 
-              {/* Foto Principal da Fachada Fisica */}
-              <div className="overflow-hidden rounded-xl border border-[#E5E7EB] bg-[#111315]">
-                <img
-                  src="/images/fachada.png"
-                  alt="Fachada fisica da sede da Trinity Supply Distribuidora De Paes e Embalagens em Guarulhos - SP"
-                  className="w-full h-56 sm:h-64 object-cover object-center"
-                />
-              </div>
-
-              {/* Segunda Foto de Detalhe 3D da Fachada + Especificacao Operacional */}
-              <div className="mt-3 grid grid-cols-12 gap-3 items-stretch">
-                <div className="col-span-5 overflow-hidden rounded-xl border border-[#E5E7EB] bg-[#111315]">
-                  <img
-                    src="/images/fachada-2.png"
-                    alt="Detalhe do letreiro 3D da Trinity Supply - Tudo para sua hamburgueria em um so lugar"
-                    className="w-full h-28 object-cover object-center"
-                  />
-                </div>
-                <div className="col-span-7 rounded-xl bg-[#FFFFFF] border border-[#E5E7EB] p-3.5 flex flex-col justify-center">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#B88208]">
-                    Estrutura Food Service
+              {/* Selo de Destaque: "Distribuidora de Paes e Embalagens" */}
+              <div className="my-5">
+                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+                  <span className="w-2 h-2 rounded-full bg-[#F5B014] shrink-0" aria-hidden="true" />
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#F5B014]">
+                    Distribuidora de Pães e Embalagens
                   </span>
-                  <p className="text-xs sm:text-sm font-bold text-[#111827] mt-1 leading-snug">
-                    Galpão com recuo frontal próprio para carga e retirada rápida.
-                  </p>
                 </div>
               </div>
 
-              {/* Card Flutuante Branco com Sombra Suave exigido no Passo 2 */}
-              <div className="mt-3.5 rounded-xl bg-[#FFFFFF] border-l-4 border-l-[#F5B014] border border-[#E5E7EB] p-4 shadow-[0_10px_25px_rgba(17,24,39,0.08)]">
-                <div className="flex items-center gap-3">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#F5B014] shrink-0" />
-                  <p className="text-xs sm:text-sm font-bold text-[#111827] leading-snug">
-                    Distribuidora de Pães e Embalagens - Abastecimento Completo Food Service
-                  </p>
+              {/* 3 Badges Minimalistas com Icones SVG */}
+              <div className="space-y-3">
+                {/* 1. Atendimento Atacado e Varejo */}
+                <div className="flex items-center gap-3.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <div className="w-10 h-10 rounded-lg bg-[#F5B014] text-[#111315] flex items-center justify-center shrink-0">
+                    <Store className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-sm font-bold text-white">
+                      Atendimento Atacado e Varejo
+                    </span>
+                    <span className="block text-xs text-[#9CA3AF]">
+                      Fornecimento flexível para reposição e demandas programadas
+                    </span>
+                  </div>
+                </div>
+
+                {/* 2. Retirada no Galpao em Guarulhos/SP */}
+                <div className="flex items-center gap-3.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <div className="w-10 h-10 rounded-lg bg-[#F5B014] text-[#111315] flex items-center justify-center shrink-0">
+                    <Building2 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-sm font-bold text-white">
+                      Retirada no Galpão em Guarulhos/SP
+                    </span>
+                    <span className="block text-xs text-[#9CA3AF]">
+                      Estoque próprio com recuo frontal para estacionamento
+                    </span>
+                  </div>
+                </div>
+
+                {/* 3. Pedidos e Cotacoes via WhatsApp */}
+                <div className="flex items-center gap-3.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <div className="w-10 h-10 rounded-lg bg-[#F5B014] text-[#111315] flex items-center justify-center shrink-0">
+                    <WhatsAppIcon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-sm font-bold text-white">
+                      Pedidos e Cotações via WhatsApp
+                    </span>
+                    <span className="block text-xs text-[#9CA3AF]">
+                      Canal comercial ágil com atendimento direto sem burocracia
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
