@@ -26,7 +26,7 @@ export const LocationSection: React.FC = () => {
           {/* Coluna Esquerda (6/12): Ficha Institucional Enxuta sem Duplicacoes */}
           <div className="lg:col-span-6 bg-[#F8F9FA] rounded-2xl border border-[#E5E7EB] p-6 sm:p-8 flex flex-col justify-between">
             <div className="space-y-6">
-              {/* Razao / Nome Oficial (Sem a tag 'NOME OFICIAL NO GOOGLE MAPS') */}
+              {/* Razao Social e Nome Institucional */}
               <div className="pb-4 border-b border-[#E5E7EB]">
                 <h3 className="font-display font-extrabold text-xl sm:text-2xl text-[#111827] leading-snug">
                   {BRAND_INFO.officialName}
