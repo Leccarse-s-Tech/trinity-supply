@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="22" fill="#111315"/>
+  <!-- Hexagono com linhas de velocidade inspirado no logo oficial Trinity Supply -->
+  <path d="M64 16L102 38V82L64 104L32 85.5V34.5L64 16Z" fill="#F5B014"/>
+  <!-- Linhas de velocidade diagonais -->
+  <path d="M14 53L36 40" stroke="#F5B014" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="10" cy="55.5" r="3" fill="#F5B014"/>
+  <path d="M12 66L36 52" stroke="#F5B014" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="17" cy="75" r="3" fill="#F5B014"/>
+  <path d="M14 86L42 70" stroke="#F5B014" stroke-width="6" stroke-linecap="round"/>
+  <path d="M26 92L48 79" stroke="#F5B014" stroke-width="6" stroke-linecap="round"/>
+  <path d="M35 99L56 87" stroke="#F5B014" stroke-width="6" stroke-linecap="round"/>
+  <!-- Caixa 3D interna -->
+  <path d="M64 34L86 46.5V73.5L64 86L42 73.5V46.5L64 34Z" fill="#111315"/>
+  <path d="M64 34L86 46.5L64 59L42 46.5L64 34Z" fill="#111315" stroke="#F5B014" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M53 40.2L75 52.8V63L69 66.2V56L47 43.5L53 40.2Z" fill="#F5B014"/>
+  <path d="M64 59V86" stroke="#F5B014" stroke-width="2.5"/>
+  <path d="M42 46.5L64 59L86 46.5" stroke="#F5B014" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
