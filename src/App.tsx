@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -24,20 +24,33 @@ function ScrollToHashElement() {
   return null;
 }
 
-export default function App() {
+function MainLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-[100dvh] flex flex-col bg-[#FFFFFF] text-[#111827]">
       <ScrollToHashElement />
       <Navbar />
       <div className="flex-1">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/404" element={<NotFoundPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+        {children}
       </div>
       <Footer />
       <FloatingWhatsApp />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <MainLayout>
+            <HomePage />
+          </MainLayout>
+        }
+      />
+      <Route path="/404" element={<NotFoundPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 }
