@@ -133,27 +133,27 @@ export const LocationSection: React.FC = () => {
             </div>
 
             {/* Botoes de Acao na Ficha */}
-            <div className="mt-7 pt-5 border-t border-[#E5E7EB] flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+            <div className="flex flex-col sm:flex-row gap-3 w-full mt-4 pt-5 border-t border-[#E5E7EB]">
               {/* Botao Primario (Amarelo): Chamar no WhatsApp Agora */}
               <a
                 href={BRAND_INFO.whatsapp.baseUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base transition-all shadow-[0_4px_14px_rgba(245,176,20,0.28)] whitespace-nowrap"
+                className="w-full sm:w-auto flex-1 inline-flex items-center text-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#F5B014] hover:bg-[#D99B0E] active:scale-[0.98] text-[#111315] font-bold text-sm sm:text-base transition-all shadow-[0_4px_14px_rgba(245,176,20,0.28)]"
               >
                 <WhatsAppIcon className="w-5 h-5 shrink-0" />
                 <span>Chamar no WhatsApp Agora</span>
               </a>
 
-              {/* Botao Secundario (Contorno Escuro): Tracar Rota no Google Maps */}
+              {/* Botao Secundario (Contorno Escuro): Abrir no Google Maps */}
               <a
                 href={BRAND_INFO.googleMaps.placeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#FFFFFF] hover:bg-[#111315] text-[#111315] hover:text-[#FFFFFF] active:scale-[0.98] border-2 border-[#111315] font-semibold text-sm sm:text-base transition-all whitespace-nowrap"
+                className="w-full sm:w-auto flex-1 inline-flex items-center text-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#FFFFFF] hover:bg-[#111315] text-[#111315] hover:text-[#FFFFFF] active:scale-[0.98] border-2 border-[#111315] font-semibold text-sm sm:text-base transition-all"
               >
                 <Navigation className="w-4 h-4 shrink-0" />
-                <span>Traçar Rota no Google Maps</span>
+                <span>Abrir no Google Maps</span>
               </a>
             </div>
           </div>
@@ -169,8 +169,8 @@ export const LocationSection: React.FC = () => {
               </div>
               <div className="flex-1 min-h-[420px]">
                 <iframe
-                  title="Localizacao Trinity Supply Distribuidora De Paes e Embalagens em Guarulhos"
-                  src={BRAND_INFO.googleMaps.embedUrl}
+                  title="Mapa de Localizacao Trinity Supply Guarulhos"
+                  src="https://maps.google.com/maps?q=-23.399886,-46.4415113&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="450"
                   style={{ border: 0, height: '100%', minHeight: '420px' }}

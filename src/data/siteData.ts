@@ -56,9 +56,9 @@ export const BRAND_INFO = {
   },
   googleMaps: {
     placeUrl:
-      'https://www.google.com/maps/place/Trinity+Supply+Distribuidora+De+P%C3%A3es+e+Embalagens/@-23.399886,-46.4415113,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce8b91afddac0b:0x4d00eec08c847846!8m2!3d-23.399886!4d-46.4415113!16s%2Fg%2F11m59yn0cv',
+      'https://www.google.com/maps/place/Trinity+Supply+Distribuidora+De+P%C3%A3es+e+Embalagens/@-23.399886,-46.4415113,17z',
     embedUrl:
-      'https://www.google.com/maps?q=Trinity+Supply+Distribuidora+De+Paes+e+Embalagens,-23.399886,-46.4415113&hl=pt-BR&z=16&output=embed',
+      'https://maps.google.com/maps?q=-23.399886,-46.4415113&t=&z=16&ie=UTF8&iwloc=&output=embed',
   },
 } as const;
 
