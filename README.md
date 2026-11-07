@@ -101,7 +101,19 @@ trinity-supply/
 
 ## Deploy
 
-O projeto esta pronto para deploy imediato na **Vercel**, **Netlify** ou **Cloudflare Pages**:
+O projeto esta configurado e pronto para deploy:
+
+### GitHub Pages (Configurado)
+- **URL de Produção**: `https://leccarse-s-tech.github.io/trinity-supply/`
+- **Deploy via terminal**:
+  ```bash
+  npm run deploy
+  ```
+  *(Executa automaticamente o build otimizado com suporte a SPA e publica na branch `gh-pages`)*
+- **Deploy automatizado via CI/CD (GitHub Actions)**:
+  - Workflow configurado em `.github/workflows/deploy.yml` com gatilho automático ao realizar push na branch `main` ou disparo manual via `workflow_dispatch`.
+
+### Vercel / Netlify / Cloudflare Pages
 - Comando de Build: `npm run build`
 - Diretorio de Saida: `dist`
 - Regras de Rewrite SPA pre-configuradas em `vercel.json`, `netlify.toml` e `public/_redirects`.
