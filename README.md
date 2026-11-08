@@ -103,15 +103,11 @@ trinity-supply/
 
 O projeto esta configurado e pronto para deploy:
 
-### GitHub Pages (Configurado)
+### GitHub Pages (100% via branch main)
 - **URL de Produção**: `https://leccarse-s-tech.github.io/trinity-supply/`
-- **Deploy via terminal**:
-  ```bash
-  npm run deploy
-  ```
-  *(Executa automaticamente o build otimizado com suporte a SPA e publica na branch `gh-pages`)*
 - **Deploy automatizado via CI/CD (GitHub Actions)**:
-  - Workflow configurado em `.github/workflows/deploy.yml` com gatilho automático ao realizar push na branch `main` ou disparo manual via `workflow_dispatch`.
+  - Workflow configurado em `.github/workflows/deploy.yml`.
+  - Qualquer alteração enviada para a branch `main` (`git push origin main`) compila e publica o site automaticamente no ar, sem precisar de branches extras nem comandos manuais.
 
 ### Vercel / Netlify / Cloudflare Pages
 - Comando de Build: `npm run build`
